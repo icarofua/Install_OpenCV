@@ -1,7 +1,18 @@
 # Install_OpenCV
 
-shell scripts to install github version of OpenCV with OpenCV-contrib in different distributions of Linux, MacOSX.
-In the file, you can edit the cmake options and finally run the command below.
+Shell scripts to install github version of OpenCV with OpenCV-contrib in different distributions of Linux.
+
+First, you need to set running permission.
 ```
-`$ ./opencv_latest.sh
+$ chmod +x *
+```
+
+After, you can run the dependencies installer by the command below.
+```
+$ sh dependencies.sh
+```
+
+After, you can edit the cmake options in opencv_latest.sh if necessary. Finally, you can run the command below.
+```
+$ sh opencv_latest.sh
 ```
