@@ -9,10 +9,10 @@ $ chmod +x *
 
 After, you can run the dependencies installer by the command below.
 ```
-$ sh dependencies.sh
+$ ./dependencies.sh
 ```
 
 After, you can edit the cmake options in opencv_latest.sh if necessary. Finally, you can run the command below.
 ```
-$ sh opencv_latest.sh
+$ ./opencv_latest.sh
 ```
