@@ -1,6 +1,6 @@
 # Install_OpenCV
 
-Shell scripts to install github version of OpenCV with OpenCV-contrib in different distributions of Linux or MacOSX.
+Shell scripts to install OpenCV with OpenCV-contrib version 3.0.0 in distributions of Linux or MacOSX.
 
 First, you need to set running permission.
 ```
