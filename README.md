@@ -12,9 +12,9 @@ After, you can run the dependencies installer by the command below.
 $ ./dependencies.sh
 ```
 
-After, you can edit the cmake options in opencv_latest.sh if necessary. Finally, you can run the command below.
+After, you can edit the cmake options in install_opencv.sh if necessary. Finally, you can run the command below.
 ```
-$ ./opencv_latest.sh
+$ ./install_opencv.sh
 ```
 
-Only the opencv_latest.sh can be runned into the MacOSX.
+Only the install_opencv.sh can be runned into the MacOSX.
