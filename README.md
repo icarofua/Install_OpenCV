@@ -17,7 +17,7 @@ After, you can edit the cmake options in install_opencv.sh if necessary. Finally
 $ ./install_opencv.sh
 ```
 
-This command install OpenCV 3.0.0, if you prefer can install the git version using the command below.
+This command installs OpenCV 3.0.0, if you prefer can install the git version using the command below.
 ```
 $ ./install_opencv_git.sh
 ```
