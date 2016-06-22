@@ -1,6 +1,6 @@
 # Install_OpenCV
 
-Shell scripts to install OpenCV with OpenCV-contrib version 3.0.0 in distributions of Linux or MacOSX.
+Shell scripts to install OpenCV with OpenCV-contrib.
 
 First, you need to set running permission.
 ```
@@ -17,4 +17,7 @@ After, you can edit the cmake options in install_opencv.sh if necessary. Finally
 $ ./install_opencv.sh
 ```
 
-Only the install_opencv.sh can be runned into the MacOSX.
+This command install OpenCV 3.0.0, if you prefer can install the git version using the command below.
+```
+$ ./install_opencv_git.sh
+```
