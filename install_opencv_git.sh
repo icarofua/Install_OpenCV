@@ -1,7 +1,18 @@
- git clone https://github.com/Itseez/opencv.git
- git clone https://github.com/Itseez/opencv_contrib.git
+if [ -d opencv ]; then
+	cd opencv
+	git pull
+	cd ..
+else
+	git clone https://github.com/Itseez/opencv.git
+fi
 
-
+if [ -d opencv_contrib ]; then
+	cd opencv_contrib
+	git pull
+	cd ..
+else
+	git clone https://github.com/Itseez/opencv_contrib.git
+fi
 
 _cmakeopts=('-D CMAKE_BUILD_TYPE=Release'
             '-D CMAKE_INSTALL_PREFIX=/usr'
