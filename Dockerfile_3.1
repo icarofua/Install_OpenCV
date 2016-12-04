@@ -15,8 +15,8 @@ RUN apt-get update && \
            /tmp/* \
            /var/tmp/*
 
-RUN cd /opt && git clone https://github.com/Itseez/opencv_contrib.git && cd opencv_contrib && git checkout 3.1
-RUN cd /opt && git clone https://github.com/Itseez/opencv.git && cd opencv && git checkout 3.1
+RUN cd /opt && git clone https://github.com/Itseez/opencv_contrib.git && cd opencv_contrib && git checkout 3.1.0
+RUN cd /opt && git clone https://github.com/Itseez/opencv.git && cd opencv && git checkout 3.1.0
 
 RUN cd /opt/opencv && mkdir release && cd release && \
           cmake -D CMAKE_BUILD_TYPE=Release \
