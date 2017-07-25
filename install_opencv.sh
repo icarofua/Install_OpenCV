@@ -36,7 +36,7 @@ _cmakeopts=('-D CMAKE_BUILD_TYPE=Release'
             '-D WITH_TBB=OFF'
             '-D WITH_IPP=OFF'
             '-D WITH_CUDA=OFF'
-	    '-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-$version/modules'
+            "-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-$version/modules"
             '-D USE_FAST_MATH=ON')
 
 cd opencv-$version
