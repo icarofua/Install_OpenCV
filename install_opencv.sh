@@ -1,11 +1,14 @@
-if [ ! -d "opencv-3.1.0" ]; then
- wget -c https://github.com/Itseez/opencv/archive/3.1.0.zip -O opencv-3.1.0.zip
- unzip opencv-3.1.0.zip
+#!/bin/bash
+version='3.2.0'
+
+if [ ! -d opencv-$version ]; then
+ wget -c https://github.com/Itseez/opencv/archive/$version.zip -O opencv-$version.zip
+ unzip opencv-$version.zip
 fi
 
-if [ ! -d "opencv_contrib-3.1.0" ]; then
- wget -c https://github.com/Itseez/opencv_contrib/archive/3.1.0.zip -O opencv_contrib-3.1.0.zip
- unzip opencv_contrib-3.1.0.zip
+if [ ! -d opencv_contrib-$version ]; then
+ wget -c https://github.com/Itseez/opencv_contrib/archive/$version.zip -O opencv_contrib-$version.zip
+ unzip opencv_contrib-$version.zip
 fi
 
 
@@ -33,10 +36,10 @@ _cmakeopts=('-D CMAKE_BUILD_TYPE=Release'
             '-D WITH_TBB=OFF'
             '-D WITH_IPP=OFF'
             '-D WITH_CUDA=OFF'
-	    '-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-3.1.0/modules'
+	    '-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-$version/modules'
             '-D USE_FAST_MATH=ON')
 
-cd opencv-3.1.0
+cd opencv-$version
 if [ ! -d "build" ]; then
 	mkdir build
 fi

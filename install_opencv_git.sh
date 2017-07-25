@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ -d opencv ]; then
 	cd opencv
 	git pull
