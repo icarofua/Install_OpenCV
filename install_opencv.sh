@@ -45,5 +45,5 @@ if [ ! -d "build" ]; then
 fi
 cd build
 cmake ${_cmakeopts[@]} ..
-make
+make -j4
 sudo make install
