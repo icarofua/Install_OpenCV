@@ -1,5 +1,5 @@
 #!/bin/bash
-version='3.2.0'
+version='3.4.1'
 
 if [ ! -d opencv-$version ]; then
  wget -c https://github.com/Itseez/opencv/archive/$version.zip -O opencv-$version.zip
@@ -15,7 +15,7 @@ fi
 
 _cmakeopts=('-D CMAKE_BUILD_TYPE=Release'
             '-D CMAKE_INSTALL_PREFIX=/usr'
-            '-D PYTHON_EXECUTABLE=/usr/bin/python'
+            '-D PYTHON_EXECUTABLE=/usr/bin/python3'
             '-D CMAKE_SKIP_RPATH=ON'
             '-D BUILD_TESTS=OFF'
             '-D ENABLE_SSE=ON'
